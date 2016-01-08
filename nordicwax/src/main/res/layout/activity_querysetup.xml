@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/querysetup_contLocation"
+        style="@style/AppTheme.ClickableContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp" >
+
+        <TextView
+            android:id="@+id/querysetup_labelLocation"
+            style="@style/AppTheme.ClickableContainerHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Místo"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/querysetup_lblLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/querysetup_labelLocation"
+            android:layout_marginBottom="@dimen/combocard_margin_left"
+            android:layout_marginLeft="@dimen/combocard_margin_left"
+            android:paddingBottom="2dp"
+            android:text="@string/querysetup_lblLocation"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/querysetup_lblLocationNotSet"
+            style="@style/AppTheme.ClickableContainerItemNotSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/querysetup_labelLocation"
+            android:layout_marginBottom="@dimen/combocard_margin_left"
+            android:layout_marginLeft="@dimen/combocard_margin_left"
+            android:paddingBottom="2dp"
+            android:text="@string/notset"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/querysetup_contWeather"
+        style="@style/AppTheme.ClickableContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/querysetup_contLocation"
+        android:layout_alignRight="@+id/querysetup_contLocation"
+        android:layout_below="@+id/querysetup_contLocation"
+        android:layout_marginBottom="10dp" >
+
+        <TextView
+            android:id="@+id/querysetup_labelWeather"
+            style="@style/AppTheme.ClickableContainerHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Počasí"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/querysetup_lblTemp"
+            style="@style/AppTheme.ClickableContainerItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/querysetup_labelWeather"
+            android:layout_marginBottom="@dimen/combocard_margin_left"
+            android:layout_marginLeft="@dimen/combocard_margin_left"
+            android:paddingBottom="2dp"
+            android:text="-5°C, prachový"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/querysetup_lblTempNotSet"
+            style="@style/AppTheme.ClickableContainerItemNotSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/querysetup_labelWeather"
+            android:layout_marginBottom="@dimen/combocard_margin_left"
+            android:layout_marginLeft="@dimen/combocard_margin_left"
+            android:paddingBottom="2dp"
+            android:text="@string/notset"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/querysetup_contRestPars"
+        style="@style/AppTheme.ClickableContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/querysetup_contWeather"
+        android:layout_alignRight="@+id/querysetup_contWeather"
+        android:layout_below="@+id/querysetup_contWeather"
+        android:layout_marginBottom="10dp" >
+
+        <TextView
+            android:id="@+id/querysetup_labelRestPars"
+            style="@style/AppTheme.ClickableContainerHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Aktivita"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/querysetup_lblActivityType"
+            style="@style/AppTheme.ClickableContainerItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/querysetup_labelRestPars"
+            android:layout_marginBottom="@dimen/combocard_margin_left"
+            android:layout_marginLeft="@dimen/combocard_margin_left"
+            android:paddingBottom="2dp"
+            android:text="Tréning"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/querysetup_lblRestParsNotSet"
+            style="@style/AppTheme.ClickableContainerItemNotSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/querysetup_labelRestPars"
+            android:layout_marginBottom="@dimen/combocard_margin_left"
+            android:layout_marginLeft="@dimen/combocard_margin_left"
+            android:paddingBottom="2dp"
+            android:text="@string/notset"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/querysetyp_contWaxPreference"
+        style="@style/AppTheme.ClickableContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/querysetup_contRestPars"
+        android:layout_alignRight="@+id/querysetup_contRestPars"
+        android:layout_below="@+id/querysetup_contRestPars" >
+
+        <TextView
+            android:id="@+id/querysetup_labelWaxpreference"
+            style="@style/AppTheme.ClickableContainerHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Preference mazání"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/querysetup_lblPricePrefs"
+            style="@style/AppTheme.ClickableContainerItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/querysetup_labelWaxpreference"
+            android:layout_marginLeft="@dimen/combocard_margin_left"
+            android:text="Preferuji cenu"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/querysetup_lblBrands"
+            style="@style/AppTheme.ClickableContainerItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/querysetup_lblPricePrefs"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/querysetup_lblPricePrefs"
+            android:layout_marginBottom="@dimen/combocard_margin_left"
+            android:layout_marginLeft="@dimen/combocard_margin_left"
+            android:paddingBottom="2dp"
+            android:text="Toko, Swix"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/querysetup_lblBrandsNotSet"
+            style="@style/AppTheme.ClickableContainerItemNotSet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="false"
+            android:layout_below="@+id/querysetup_labelWaxpreference"
+            android:layout_marginBottom="@dimen/combocard_margin_left"
+            android:layout_marginLeft="@dimen/combocard_margin_left"
+            android:paddingBottom="2dp"
+            android:text="@string/notset"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/querysetup_btSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:text="Hledej" />
+
+</RelativeLayout>

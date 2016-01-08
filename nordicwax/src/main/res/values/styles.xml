@@ -1,0 +1,181 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    
+    </style>
+
+ <style name="AppBaseDialogTheme" parent="@android:style/Theme.Dialog">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+               <item name="android:windowBackground">@drawable/nordicwax</item>
+        
+         <item name="android:textColor">@color/blue_nw</item>
+         <item name="android:textStyle">bold</item>
+         <item name="android:buttonStyle">@style/AppTheme.Button</item>
+         <item name="android:imageButtonStyle">@style/AppTheme.Button</item>
+         <item name="android:tabWidgetStyle">@style/AppTheme.Tab</item>
+         <item name="android:checkboxStyle">@style/AppTheme.Checkbox</item>
+        <item name="android:editTextStyle">@style/AppTheme.EditText</item>  
+        <item name="android:alertDialogTheme">@style/AppTheme.DialogTheme</item>
+          
+          
+    </style>
+   <style name="AppTheme.DialogTheme" parent="AppBaseDialogTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+       
+        
+         <item name="android:textColor">@color/blue_nw</item>
+         <item name="android:textStyle">bold</item>
+         <item name="android:buttonStyle">@style/AppTheme.Dialog.Button</item>
+         <item name="android:imageButtonStyle">@style/AppTheme.Dialog.ImageButton</item>
+          <item name="android:listViewStyle">@style/AppTheme.ListView</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+         <item name="android:tabWidgetStyle">@style/AppTheme.Tab</item>
+         <item name="android:checkboxStyle">@style/AppTheme.Checkbox</item>
+         <item name="android:editTextStyle">@style/AppTheme.EditText</item> 
+	 	 <item name="android:windowTitleStyle">@style/AppTheme.DialogTitle</item>
+	 	<item name="mta">@style/AppTheme.DialogTitle</item> 
+	 	<item name="messageBoxStyle">@style/AppTheme.TextAppearance</item>
+	 	
+	 	 <item name="android:windowFrame">@null</item>
+	     <item name="android:windowIsFloating">true</item>
+	     <item name="android:windowContentOverlay">@null</item>
+		 <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+		 <item name="android:windowBackground">@drawable/window_dialog</item>
+		 <item name="android:colorBackgroundCacheHint">@null</item> 
+    </style>
+    
+   <style name="AppTheme.DialogTitle">
+        <item name="android:padding">@dimen/dialog_padding</item>
+       <item name="android:background">@drawable/bg_label_header</item>
+      
+           <item name="android:textStyle">bold</item>
+           <item name="android:textSize">@dimen/text_size_medium</item>
+             <item name="android:textColor">@android:color/white</item>            
+           <item name="android:gravity">center_horizontal</item>   
+   </style>
+     <style name="AppTheme.DialogTitle.TextAppearance" parent="AppTheme.TextAppearance">   
+          <item name="android:textColor">@android:color/white</item>            
+           <item name="android:gravity">center_horizontal</item>   
+             
+    </style>
+ <style name="AppTheme.TextAppearance" parent="android:style/TextAppearance">        
+        <item name="android:textColor">@color/clickable_label_text</item>
+         <item name="android:textStyle">bold</item>
+           <item name="android:textSize">@dimen/text_size_big</item>
+           <item name="android:gravity">center_vertical</item>
+           <item name="android:duplicateParentState">true</item>
+           
+    </style>
+   <style name="AppTheme.TextAppearance.Medium" parent="AppTheme.TextAppearance">               
+           <item name="android:textSize">@dimen/text_size_medium</item>         
+    </style>
+    
+      <style name="AppTheme.Button" parent="android:style/Widget.Button">
+          <item name="android:background">@drawable/button_bg</item>
+          <item name="android:textColor">@color/white</item>
+          <item name="android:padding">@dimen/button_padding</item>
+                
+      </style>
+       
+      <style name="AppTheme.Dialog.Button" parent="AppTheme.Button">
+             <item name="android:padding">@null</item>
+          <item name="android:paddingTop">@dimen/dialog_button_padding_vertical</item>
+         <item name="android:paddingBottom">@dimen/dialog_button_padding_vertical</item>
+          <item name="android:paddingLeft">@dimen/dialog_button_padding_horizontal</item>
+           <item name="android:paddingRight">@dimen/dialog_button_padding_horizontal</item>        
+      </style>
+       <style name="AppTheme.Dialog.ImageButton" parent="AppTheme.Button">
+         
+          <item name="android:padding">@null</item>
+        <item name="android:paddingTop">@dimen/dialog_button_padding_vertical</item>
+         <item name="android:paddingBottom">@dimen/dialog_button_padding_vertical</item>
+          <item name="android:paddingLeft">@dimen/dialog_button_padding_horizontal</item>
+           <item name="android:paddingRight">@dimen/dialog_button_padding_horizontal</item>        
+      </style>
+      
+       <style name="AppTheme.EditText" parent="android:style/Widget.EditText">
+          <item name="android:background">@drawable/bg_edittext</item>
+          <item name="android:textColor">@color/clickable_label_text</item>
+          <item name="android:padding">@dimen/edittext_padding</item>
+      </style>
+         <style name="AppTheme.Checkbox" parent="android:style/Widget.CompoundButton.CheckBox">
+           <item name="android:textColor">@color/clickable_label_text</item>
+         <item name="android:textStyle">bold</item>
+         
+           <item name="android:gravity">center_vertical</item>
+         <item name="android:button">@drawable/check_button_bg</item>
+       
+      </style>
+      
+      
+         <style name="AppTheme.TabHost">
+            <item name="android:background">@drawable/tabhost_bg</item>
+          
+      </style>
+      <style name="AppTheme.Tab">
+              <item name="android:textColor">@color/white</item>
+            <item name="android:background">@drawable/tab_bg</item>
+            </style> 
+   
+      <style name="AppTheme.ClickableLabel" parent="android:style/Widget.Button">
+          <item name="android:gravity">left</item>
+           <item name="android:textColor">@color/blue_nw</item>
+         <item name="android:textStyle">bold</item>
+           <item name="android:textSize">@dimen/text_size_big</item>
+             <item name="android:background">@drawable/label_clickable</item>
+             <item name="android:padding">10sp</item>
+      </style>
+      
+       <style name="AppTheme.ClickableContainer" parent="AppTheme.ClickableLabel">
+         <item name="android:padding">@null</item>
+          <!--   <item name="android:paddingTop">1sp</item>
+             <item name="android:paddingLeft">10sp</item>
+              <item name="android:paddingRight">10sp</item>-->
+      </style>
+           <style name="AppTheme.ClickableContainerHeader" parent="AppTheme.TextAppearance">
+          <item name="android:gravity">left</item>
+           <item name="android:textColor">@android:color/white</item>
+         
+           <item name="android:textSize">@dimen/text_size_medium</item>
+             <item name="android:background">@drawable/bg_label_header</item>
+             <item name="android:padding">5sp</item>
+             
+      </style>
+      <style name="AppTheme.ClickableContainerItem" >        
+           <item name="android:textColor">@color/clickable_label_text</item>        
+           <item name="android:duplicateParentState">true</item>  
+                      
+      </style>
+       <style name="AppTheme.ClickableContainerItemNotSet" >        
+           <item name="android:textColor">@color/clickable_container_not_set</item>        
+           <item name="android:duplicateParentState">true</item>  
+        
+                      
+      </style>
+      <style name="AppTheme.ListView" parent="android:style/Widget.ListView">
+    
+    <item name="android:divider">@color/button_center</item>
+    <item name="android:dividerHeight">1dp</item>
+    <item name="android:textColor">@color/blue_nw</item>
+         <item name="android:textStyle">bold</item>
+           <item name="android:textSize">@dimen/text_size_big</item>
+</style>
+</resources>

@@ -1,0 +1,3 @@
+include ':LwDroid'
+project(':LwDroid').projectDir = new File(settingsDir, '../LwDroid/LwDroid')
+include ':nordicwax'

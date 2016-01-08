@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\develop\lamp\nordicwax\nordicwax\nordicwax\build\intermediates\exploded-aar\nordicwax\LwDroid\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3e9818f4868cca5b84c3b0c4d83fd1416db48cf2">
+        <dex dex="C:\develop\lamp\nordicwax\nordicwax\nordicwax\build\intermediates\pre-dexed\debug\nordicwax-LwDroid-unspecified_46e82c91e9515224ef9d3fcdee0ff89a96609fce.jar" />
+    </item>
+    <item
+        jar="C:\develop\lamp\nordicwax\nordicwax\nordicwax\build\intermediates\exploded-aar\nordicwax\LwDroid\unspecified\jars\libs\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="529f828abddfad471456c6618c904f8a97b89b50">
+        <dex dex="C:\develop\lamp\nordicwax\nordicwax\nordicwax\build\intermediates\pre-dexed\debug\gson-2.2.4_2b922e3190b13dc2412b91a559d5ae4facf1569a.jar" />
+    </item>
+    <item
+        jar="C:\Android\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\develop\lamp\nordicwax\nordicwax\nordicwax\build\intermediates\pre-dexed\debug\support-v4-18.0.0_2205dc014a04cdd7fdcc3c6d3e2e8c6be689c2fc.jar" />
+    </item>
+    <item
+        jar="C:\Users\stani\.gradle\caches\modules-2\files-2.1\org.androidannotations\androidannotations-api\3.3.2\7d6149d856b880bbd676047aacb8446a758fbbdb\androidannotations-api-3.3.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="7d6149d856b880bbd676047aacb8446a758fbbdb">
+        <dex dex="C:\develop\lamp\nordicwax\nordicwax\nordicwax\build\intermediates\pre-dexed\debug\androidannotations-api-3.3.2_23a471e1e22c1be1d3788f8bb47a051835291edb.jar" />
+    </item>
+
+</items>

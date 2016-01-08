@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dialog_padding" >
+
+    <LinearLayout
+        android:id="@+id/contCenter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cbAutoSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblResult"
+        android:layout_marginTop="@dimen/dialog_padding"
+        android:text="Použít aktuální polohu" />
+
+    <RelativeLayout
+        android:id="@+id/contSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dialog_padding"
+        android:layout_marginTop="@dimen/dialog_padding"
+        android:layout_toRightOf="@+id/contCenter"
+        android:background="@drawable/window_dialog"
+        android:padding="@dimen/dialog_padding" >
+
+        <TextView
+            android:id="@+id/lblSearchTitle"
+            style="@style/AppTheme.ClickableContainerHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="Hledání"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/lblAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtAddress"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/btSearch"
+            android:layout_toLeftOf="@+id/btSearch"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="Adresa nebo její část:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/btSearch"
+            android:layout_marginTop="@dimen/dialog_padding"
+            
+            android:minWidth="220dp" >
+
+            <requestFocus />
+        </EditText>
+
+        <ImageButton
+            android:id="@+id/btSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/lblSearchTitle"
+            android:layout_marginTop="@dimen/dialog_padding"
+            android:src="@drawable/ic_menu_search_white" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/lblResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="false"
+        android:layout_below="@+id/lblResultLabel"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="@dimen/dialog_padding"
+        android:layout_toLeftOf="@+id/contCenter"
+        android:background="@color/lightblue_nw"
+        android:hint="@string/location_not_choosen"
+        android:padding="@dimen/dialog_padding"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dialog_padding"
+        android:text="@string/ok" />
+
+    <TextView
+        android:id="@+id/lblResultLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:text="Vybrané místo:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

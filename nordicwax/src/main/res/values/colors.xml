@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_nw">#224b97</color>
+    <!--    <color name="blue_nw">#305f8d</color>-->
+    <color name="lightblue_nw">#aab9d5eb</color>
+     <color name="lightblue_nw_opaque">#dce9fa</color>
+    <color name="white">#FFFFFF</color>
+     <color name="button_edge">#6393f0</color>
+     <color name="button_center">#224b97</color>
+     <color name="button_text">#FFFFFF</color>
+     <color name="button_disabled">#d7d7d7</color>
+      <color name="tab_top">#eea72d</color>
+     <color name="tab_bottom">#f8cc7f</color>
+      <!--      <color name="tabhost_top">#ffb7cffc</color>
+     <color name="tabhost_bottom">#55e7effd</color>-->
+           <color name="tabhost_top">#55FFFFFF</color>
+     <color name="tabhost_bottom">#55FFFFFF</color>
+      <color name="clickable_container_not_set">#888888</color>
+</resources>

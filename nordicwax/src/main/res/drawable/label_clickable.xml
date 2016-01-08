@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list >
+            <item>
+                <shape>
+                    <corners android:radius="10dp"/>
+                 
+                    <solid  android:color="@color/blue_nw"/>
+                </shape>
+        		     
+            </item>
+            <item >
+                <bitmap android:src="@drawable/label_arrow_white" android:gravity="right|bottom"/>
+            </item>
+       </layer-list>
+        </item>
+  <item  android:state_enabled="false">
+       	<color android:color="@color/button_disabled"/>     
+      </item>
+     
+      <item>
+        <layer-list >
+              <item>
+            <shape>
+                    <corners android:radius="10dp"/>
+                    <solid  android:color="@color/lightblue_nw" />
+                    <stroke android:color="@color/blue_nw" android:width="1dp"/>
+                </shape>
+        		    </item>  
+            <item >
+                <bitmap android:src="@drawable/label_arrow" android:gravity="right|bottom"/>
+            </item>
+        </layer-list></item>
+</selector>

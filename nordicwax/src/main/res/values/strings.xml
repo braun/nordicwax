@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">nordicwax</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_waxing">Doporučené mazání</string>
+     <string name="title_query_waxing">Doporučit mazání</string>
+    <string name="bt_ok">Použít</string>
+    <string name="bt_refresh">Obnovit</string>
+    <string name="location_text">Harrachov, 1100m, -5°C</string>
+    <string name="tabKick">Odraz</string>
+ 	<string name="tabGlide">Skluz</string>
+ 	<string name="waxname">Toko LF grey</string>
+ 	<string name="proc">80%</string>
+    <string name="querysetup_lblLocation">Harrachov</string>
+    <string name="settings">Nastavení</string>
+    <string name="search">Hledej</string>
+    <string name="dialog_setlocation_title">Nastavení místa</string>
+    <string name="location_not_choosen">Nezvoleno...</string>
+    <string name="unable_to_get_location_info">Nepodařilo se získat informace o takovém místě</string>
+    <string name="locationdialog_location_spinner_title">Zadané adrese odpovídá víc míst</string>
+    <string name="notset">Nenastaveno</string>
+    <string name="dialog_settemp_title">Počasí</string>
+    <string name="now">Nyní</string>
+    <string name="temperature_not_filled">Není vyplněna teplota!</string>
+    <string name="temparature_should_be_number">Teplota musí být celé číslo</string>
+    <string name="set_location_first">Nastavte nejdříve místo!</string>
+</resources>

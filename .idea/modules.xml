@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../LwDroid/LwDroid/LwDroid.iml" filepath="$PROJECT_DIR$/../LwDroid/LwDroid/LwDroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LwDroid/LwDroid.iml" filepath="$PROJECT_DIR$/LwDroid/LwDroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nordicwax.iml" filepath="$PROJECT_DIR$/nordicwax.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nordicwax/nordicwax-nordicwax.iml" filepath="$PROJECT_DIR$/nordicwax/nordicwax-nordicwax.iml" />
+    </modules>
+  </component>
+</project>

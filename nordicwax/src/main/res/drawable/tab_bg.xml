@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+    <corners android:topLeftRadius="@dimen/tabcorner_rad" android:topRightRadius="@dimen/tabcorner_rad"/>
+	<gradient  android:angle="90" android:startColor="@color/tab_bottom" android:endColor="@color/tab_top" />
+    
+</shape>

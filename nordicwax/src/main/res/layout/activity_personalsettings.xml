@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <Button
+        android:id="@+id/persets_btStylePreference"
+        style="@style/AppTheme.ClickableLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:text="Bruslení"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/querysetup_labelWeather"
+        style="@style/AppTheme.ClickableLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/persets_btStylePreference"
+        android:layout_alignRight="@+id/persets_btStylePreference"
+        android:layout_below="@+id/persets_btStylePreference"
+        android:layout_marginBottom="10dp"
+        android:text="Profi"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/querysetup_lblActivityType"
+        style="@style/AppTheme.ClickableLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/querysetup_labelWeather"
+        android:layout_alignRight="@+id/querysetup_labelWeather"
+        android:layout_below="@+id/querysetup_labelWeather"
+        android:layout_marginBottom="10dp"
+        android:text="Tréning"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:id="@+id/querysetyp_contWaxPreference"
+        style="@style/AppTheme.ClickableLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/querysetup_lblActivityType"
+        android:layout_alignRight="@+id/querysetup_lblActivityType"
+        android:layout_below="@+id/querysetup_lblActivityType" >
+
+        <TextView
+            android:id="@+id/querysetup_lblPricePrefs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Preferuji cenu"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/querysetup_btSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:text="Hledej" />
+
+</RelativeLayout>

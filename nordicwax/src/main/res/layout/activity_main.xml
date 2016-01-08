@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tabhost"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/btRefresh"
+        android:text="@string/bt_ok" />
+
+    <Button
+        android:id="@+id/btRefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btOk"
+        android:layout_alignBottom="@+id/btOk"
+        android:layout_alignRight="@+id/tabhost"
+        android:text="@string/bt_refresh" />
+
+    <TextView
+        android:id="@+id/lblLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/location_text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btOk"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lblLocation"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                       <TextView
+                           android:id="@+id/lblKick"
+                           android:layout_width="wrap_content"
+                           android:layout_height="fill_parent"
+                           android:tag="tabKick"
+                           android:text="@string/tabKick" />
+
+                <TextView
+                    android:id="@+id/lblGlide"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:tag="tabGlide"
+                    android:text="@string/tabGlide" />
+
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                style="@style/AppTheme.TabHost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ListView
+                    android:id="@+id/tabKick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                </ListView>
+
+                <ListView
+                    android:id="@+id/tabGlide"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                </ListView>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>
